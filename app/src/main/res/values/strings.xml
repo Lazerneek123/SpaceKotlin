@@ -2,4 +2,8 @@
     <string name="app_name">Space Challenge Kotlin</string>
     <string name="buttonStart">Start</string>
     <string name="information">Тут виведеться інформація: \n(нажміть кнопку start для запуску симуляції)!</string>
+    <string name="textSimulationRocketU1Part1">Моделювання для ракет U1 (дві фази):\nБюджет:  </string>
+    <string name="textSimulationRocketU1Part2"> мільйонів $ // кількість ракет U1: </string>
+    <string name="textSimulationRocketU2Part1">\nМоделювання для ракет U2 (дві фази):\nБюджет:  </string>
+    <string name="textSimulationRocketU2Part2"> мільйонів $ // кількість ракет U2: </string>
 </resources>

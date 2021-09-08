@@ -1,27 +1,12 @@
-package com.example.spacechallengekotlin
+package com.example.spacechallengekotlin.entities
+
+import com.example.spacechallengekotlin.SpaceShip
 
 open class Rocket : SpaceShip {
 
-    var cost = 0
-        set(value){
-            if(value>0)
-                field = value
-        }
-        get() = field
-
-    var weight = 0
-        set(value){
-            if(value>0)
-                field = value
-        }
-        get() = field
-
-    var maxWeight = 0
-        set(value){
-            if(value>0)
-                field = value
-        }
-        get() = field
+    open var cost: Int = 0
+    protected open var weight = 0
+    protected open var maxWeight = 0
 
     var fillWeight = 0
         set(value){

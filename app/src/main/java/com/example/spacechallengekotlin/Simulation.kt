@@ -1,5 +1,9 @@
 package com.example.spacechallengekotlin
 
+import com.example.spacechallengekotlin.entities.Item
+import com.example.spacechallengekotlin.entities.Rocket
+import com.example.spacechallengekotlin.entities.U1
+import com.example.spacechallengekotlin.entities.U2
 import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStream
@@ -8,7 +12,7 @@ import kotlin.collections.ArrayList
 
 open class Simulation {
 
-    open fun loadItems(arrayListItems: ArrayList<Item>, inputStream: InputStream) : ArrayList<Item>{
+    open fun loadItems(arrayListItems: ArrayList<Item>, inputStream: InputStream){
 
         val bufferedReader : BufferedReader = inputStream.bufferedReader()
 
@@ -28,8 +32,6 @@ open class Simulation {
             item.name = ex.message.toString()
             arrayListItems.add(item)
         }
-
-        return arrayListItems
     }
 
     open fun loadU1(itemList: ArrayList<Item>) : ArrayList<Rocket>{
@@ -38,7 +40,7 @@ open class Simulation {
 
         for (item in itemList) {
             if (rocket.canCarry(item)) {
-                rocket.fillWeight = rocket.carry(item)
+                rocket.carry(item)
                 rocketModelListU1.add(rocket)
             } else {
                 rocket = U1()
@@ -55,7 +57,7 @@ open class Simulation {
 
         for (item in itemList) {
             if (rocket.canCarry(item)) {
-                rocket.fillWeight = rocket.carry(item)
+                rocket.carry(item)
                 rocketModelListU2.add(rocket)
             } else {
                 rocket = U2()

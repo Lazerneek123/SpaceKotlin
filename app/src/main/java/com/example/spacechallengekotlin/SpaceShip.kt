@@ -1,6 +1,8 @@
 package com.example.spacechallengekotlin
 
-internal interface SpaceShip {
+import com.example.spacechallengekotlin.entities.Item
+
+interface SpaceShip {
     fun launch(): Boolean
     fun land(): Boolean
     fun canCarry(item : Item?): Boolean

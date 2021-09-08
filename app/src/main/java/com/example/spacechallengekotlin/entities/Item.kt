@@ -1,4 +1,4 @@
-package com.example.spacechallengekotlin
+package com.example.spacechallengekotlin.entities
 
 open class Item {
     var name = ""
