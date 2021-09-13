@@ -6,4 +6,5 @@
     <string name="textSimulationRocketU1Part2"> мільйонів $ // кількість ракет U1: </string>
     <string name="textSimulationRocketU2Part1">\nМоделювання для ракет U2 (дві фази):\nБюджет:  </string>
     <string name="textSimulationRocketU2Part2"> мільйонів $ // кількість ракет U2: </string>
+    <string name="textItem">\nПредмети: </string>
 </resources>

@@ -1,6 +1,6 @@
 package com.example.spacechallengekotlin.entities
 
-open class Item {
+class Item {
     var name = ""
 
     var weight = 0

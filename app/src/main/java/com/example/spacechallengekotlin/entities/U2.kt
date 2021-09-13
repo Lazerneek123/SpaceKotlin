@@ -1,17 +1,19 @@
 package com.example.spacechallengekotlin.entities
 
-open class U2 : Rocket() {
-    override var cost: Int = 120
-    override var weight: Int = 18000
-    override var maxWeight: Int = 29000
+class U2(_cost: Int, _weight: Int, _maxWeight: Int) : Rocket() {
+    init {
+        cost = _cost
+        weight = _weight
+        maxWeight = _maxWeight
+    }
 
     override fun land(): Boolean {
-        launchExplosion = 4 * (fillWeight / maxWeight)
+        launchExplosion = 4 * ((fillWeight - weight) / maxWeight)
         return launchExplosion < (0..8).random()
     }
 
     override fun launch(): Boolean {
-        landingCrash = 8 * (fillWeight / maxWeight)
+        landingCrash = 8 * ((fillWeight - weight) / maxWeight)
         return landingCrash < (0..16).random()
     }
 }

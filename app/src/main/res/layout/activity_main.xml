@@ -20,8 +20,8 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="209dp"
-        android:layout_height="102dp"
+        android:layout_width="165dp"
+        android:layout_height="85dp"
         android:layout_marginBottom="10dp"
         android:background="@color/LightBlue"
         android:onClick="startSimulation"
@@ -40,7 +40,7 @@
         android:layout_marginBottom="288dp"
         android:text="@string/information"
         android:textColor="@color/White"
-        android:textSize="20sp"
+        android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />

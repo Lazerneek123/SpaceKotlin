@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="countRocketU1">100</integer>
+    <integer name="weightRocketU1">10000</integer>
+    <integer name="maxWeightRocketU1">18000</integer>
+
+    <integer name="countRocketU2">120</integer>
+    <integer name="weightRocketU2">18000</integer>
+    <integer name="maxWeightRocketU2">29000</integer>
+</resources>
